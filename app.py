@@ -17,7 +17,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # Load YOLO model
-MODEL_PATH = os.path.join(os.path.dirname(__file__), 'mlbb-ai-clipper-model', 'train_size_n', 'weights', 'best.pt')
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'train_size_n', 'weights', 'best.pt')
 model = YOLO(MODEL_PATH)
 
 # Create FastAPI instance
